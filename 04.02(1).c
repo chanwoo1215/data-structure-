@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int newmain() {
+int main() {
     int n;
 
     
