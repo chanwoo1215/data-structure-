@@ -34,3 +34,5 @@ n이 커질수록 이 파동은 기하급수적으로 높아져 cput 100% 점유
  <img width="1029" height="399" alt="스크린샷 2026-04-13 165318" src="https://github.com/user-attachments/assets/91408754-51c7-4124-bbb8-30fde467e01e" />
 <img width="1304" height="411" alt="스크린샷 2026-04-13 165259" src="https://github.com/user-attachments/assets/1a0463d6-a011-45b1-b10d-1c7b6a53d136" />
 
+
+
