@@ -1,5 +1,14 @@
-<img width="1662" height="376" alt="배열 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/bee6e522-6b58-4526-bf35-b1dac9f4f85a" /><img width="1636" height="196" alt="포인터 편향 이진트리 메모리  사용량" src="https://github.com/user-attachments/assets/43104e59-1ba3-43ab-b681-690d3723171b" /><img width="1635" height="190" alt="포인터 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/32db44b7-a7de-4ade-89d5-fbf929deb2c7" />
-<img width="1635" height="590" alt="배열 일반 이진트리 메모리 사용량 " src="https://github.com/user-attachments/assets/107a060d-be4e-49a5-b733-2d17b3362b13" />
+<img width="1632" height="197" alt="배열 편향 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/d3fe00ae-642b-4cee-a8fb-e2c2b1d53106" />
+<img width="1662" height="376" alt="배열 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/5384906d-1db0-4ba9-819e-c3587f47ae68" />
+<img width="1635" height="590" alt="배열 일반 이진트리 메모리 사용량 " src="https://github.com/user-attachments/assets/8e39fe8f-5696-4025-958a-83ff34ac33e0" />
+
+<img width="1656" height="316" alt="일반 이진트리 (포인터 사용)" src="https://github.com/user-attachments/assets/b6f7251f-e357-4977-ba5e-7b15c12c58c7" />
+<img width="1636" height="196" alt="포인터 편향 이진트리 메모리  사용량" src="https://github.com/user-attachments/assets/5ba47724-d46b-4e69-978a-c55c2ba6a4e7" />
+<img width="1635" height="190" alt="포인터 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/9c7be0f3-7d24-44bb-9e95-6a2f1b6c3c86" />
+
+
+
+
 
 
 배열 기반 구현이 포인터 기반 구현에 비해 57kb 더 많은 메모리를 점유함
