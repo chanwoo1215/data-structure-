@@ -1,0 +1,14 @@
+<img width="1662" height="376" alt="배열 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/bee6e522-6b58-4526-bf35-b1dac9f4f85a" /><img width="1636" height="196" alt="포인터 편향 이진트리 메모리  사용량" src="https://github.com/user-attachments/assets/43104e59-1ba3-43ab-b681-690d3723171b" /><img width="1635" height="190" alt="포인터 완전 이진트리 메모리 사용량" src="https://github.com/user-attachments/assets/32db44b7-a7de-4ade-89d5-fbf929deb2c7" />
+<img width="1635" height="590" alt="배열 일반 이진트리 메모리 사용량 " src="https://github.com/user-attachments/assets/107a060d-be4e-49a5-b733-2d17b3362b13" />
+
+
+배열 기반 구현이 포인터 기반 구현에 비해 57kb 더 많은 메모리를 점유함
+배열 기반 일반 이진트리는 노드 위치가 비대칭적이므로 중간 인덱스에 미사용 공간이 발생하여 메모리 낭비가 커짐
+반면 포인터는 실제 존재하는 노드만 동적 할당하므로 메모리 효율이 좋음
+
+완전 이진트리는 포인터 기반 구현이 5kb 더 많은 메모리를 점유
+완전 이진트리는 배열 사용 시 빈 공간 낭비가 없음, 포인터 방식은 노드당 자식 포인터 변수의 오버헤드가 누적되기 때문에
+배열 방식이 상대적으로 메모리를 절약
+
+편향 이진트리 소규모 입력 환경에서는 프로세스 기본 오버헤드로 인해 두 방식 간 메모리 차이가 없음
+
