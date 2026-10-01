@@ -6,14 +6,13 @@
 #define DATA_SIZE 100
 #define SEARCH_KEYS_SIZE 50
 
-// 이진 탐색 트리 노드 구조체 (포인터 기반 연결 표현)
 typedef struct TreeNode {
     int data;
     struct TreeNode* left;
     struct TreeNode* right;
 } TreeNode;
 
-// 새 노드 생성 함수
+// 
 TreeNode* createNode(int data) {
     TreeNode* newNode = (TreeNode*)malloc(sizeof(TreeNode));
     newNode->data = data;
@@ -22,7 +21,7 @@ TreeNode* createNode(int data) {
     return newNode;
 }
 
-// BST 데이터 삽입 함수 (삽입 위치 탐색 비교 횟수 측정)
+
 TreeNode* insertBST(TreeNode* root, int data, int* buildCompCount) {
     if (root == NULL) {
         return createNode(data);
@@ -46,10 +45,10 @@ int sequentialSearch(int arr[], int size, int key, int* compCount) {
     for (int i = 0; i < size; i++) {
         (*compCount)++;
         if (arr[i] == key) {
-            return i; // 찾음 (인덱스 반환)
+            return i; 
         }
     }
-    return -1; // 못 찾음
+    return -1; 
 }
 
 // 2. 이진 탐색 트리 탐색 (BST Search)
@@ -60,7 +59,7 @@ TreeNode* searchBST(TreeNode* root, int key, int* compCount) {
     while (current != NULL) {
         (*compCount)++;
         if (key == current->data) {
-            return current; // 찾음 (노드 포인터 반환)
+            return current; 
         }
         else if (key < current->data) {
             current = current->left;
@@ -69,7 +68,7 @@ TreeNode* searchBST(TreeNode* root, int key, int* compCount) {
             current = current->right;
         }
     }
-    return NULL; // 못 찾음
+    return NULL; 
 }
 
 int main() {
@@ -79,9 +78,9 @@ int main() {
 
     srand((unsigned int)time(NULL));
 
-    // =========================================================================
+    
     // [1] 중복 없는 0~1000 사이 정수 100개 생성 및 배열/BST 저장
-    // =========================================================================
+    
     int bstBuildCompCount = 0;
     int count = 0;
 
@@ -90,14 +89,14 @@ int main() {
         if (isUsed[num]) continue;
 
         isUsed[num] = true;
-        array[count] = num; // 배열 저장 (발생 순서 유지)
+        array[count] = num; 
 
-        // BST 저장 (생성 시 비교 횟수 수집)
+        
         root = insertBST(root, num, &bstBuildCompCount);
         count++;
     }
 
-    // [출력 1] 생성된 100개의 정수 (발생 순서)
+    // [출력 1] 생성된 100개의 정수
     printf("=======================================================================\n");
     printf("[1] 임의 생성된 100개의 정수 (발생 순서대로 배열 저장)\n");
     printf("=======================================================================\n");
@@ -112,9 +111,9 @@ int main() {
     printf("=======================================================================\n");
     printf(" - 100개 정수 삽입 시 발생한 총 비교 횟수 : %d 회\n", bstBuildCompCount);
 
-    // =========================================================================
+    
     // [2] 50개 탐색 대상(Search Key) 임의 생성
-    // =========================================================================
+    
     int searchKeys[SEARCH_KEYS_SIZE];
     for (int i = 0; i < SEARCH_KEYS_SIZE; i++) {
         searchKeys[i] = rand() % 1001;
@@ -129,9 +128,9 @@ int main() {
         if ((i + 1) % 10 == 0) printf("\n");
     }
 
-    // =========================================================================
+    
     // [3] 50회 탐색 수행 및 개별/그룹 통계 측정
-    // =========================================================================
+    
     int totalSeqComp = 0, totalBSTComp = 0;
 
     // 추가 통계 변수 (성공/실패 분리 및 최소/최대 비교 횟수)
